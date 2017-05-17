@@ -1,0 +1,96 @@
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	background-color: #000000;
+}
+img {
+	border:0;
+	display:block;
+	margin:0 auto;
+	padding:0;
+}
+table {
+	
+	border:0;
+	margin:0 auto;
+}
+ol {
+	margin-top:0;
+}
+ul{ margin: 0; }
+#bg {
+	width:100%;
+	margin:0;
+	padding:0;
+	position:relative;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#wrap {
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+#header{ width:1024px; margin:0 auto; position:relative; height:762px;}
+	#mainMenu{
+	width: 75px;
+	height: 425px;
+	position: absolute;
+	top: 310px;
+	left: 840px;
+}
+		ul.mainnav { width:75px; height:425px; position:relative; display:inline-block; margin:0; padding:0; }
+		ul.mainnav li { margin:0; padding:0; display:inline; width:75px; height:75px; }
+			ul.mainnav li a{ width:75px; height:75px; background:#000000; color:#BDBDBD; border:1px solid #fff; font-size:18px;  text-align:center; display:block; font-family:"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif; margin-bottom:10px; transition: all 0.5s; }
+			ul.mainnav li a:hover{ background:#ecc895;color:#000000;  border:1px solid #ffffff;  transition: all 0.5s; }
+			ul.mainnav li a.newsongs{ background:#ecc895; border:1px solid #ffffff; color:#000000; transition: all 0.5s; }
+			ul.mainnav li a.newsongs:hover{ background: #573709; color:#ffffff; transition: all 0.5s;  }
+			ul.mainnav li a:before{ content: ''; display: inline-block; vertical-align: middle; height:100%; }
+			ul.mainnav li a span{  display: inline-block; vertical-align: middle; }
+
+
+#main {
+	width:1024px;
+	margin:0 auto; 
+	height:120px;
+	position: relative;
+	padding-bottom:20px;
+	}
+ #text01 {
+	width: 757px;
+	height: 104px;
+	top: 10px;
+	left: 74px;
+	position: absolute;
+	background: url(../images/text01.png) no-repeat;
+
+}
+ ul#directions{
+	width: 730px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 98px;
+	left: 89px;
+	font: 16px/21px "微軟正黑體", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+	
+#we5_Logo{
+	width: 86px;
+	height: 30px;
+	position: absolute;
+	left: 835px;
+	top: -497px;
+	}
+.we5_Logo a {
+	width:86px;
+	height:30px;
+	display:block;
+	background: url(../images/logo.png);
+	text-indent:-9999px;
+	z-index: 999;
+	}

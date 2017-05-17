@@ -1,0 +1,141 @@
+/* CSS Document */
+
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#FFF; 
+	min-height:100%0px;
+}
+img {
+	border:0;
+	display:block;
+	margin:0 auto;
+	padding:0;
+}
+table {
+	border:0;
+	margin:0 auto;
+}
+ol {
+	margin-top:0;
+}
+ul{ margin: 0; }
+#bg {
+	width:100%;
+	min-height:950px;
+	margin:0;
+	padding:0;
+	position:relative;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#wrap {
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	min-height:950px;
+}
+#header{ width:1024px; margin:0 auto; position:relative; height:850px;}
+	#slogn{
+	width:875px;
+	height:97px;
+	position:absolute;
+	top:726px;
+	left:80px;
+	background-image:url(../images/text01.png);
+}
+	#header ul#text02{
+	width:340px;
+	display:block;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:823px;
+	left:586px;
+	font:16px/24px "微軟正黑體", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#ff9997;
+}
+	
+
+#main {
+	width:1024px;
+	margin:0 auto; 
+	height:70px;
+	position: relative;
+	padding-bottom:20px;
+	}	
+	#mainMenu{ width:610px; height: 45px; position: absolute; top: 10px; left:270px; }
+		ul.mainnav { width:610px; height:45px; position:relative; display:inline-block; margin:0; padding:0; }
+		ul.mainnav li { margin:0; padding:0; display:inline; width:122px; height:45px; float:left; }
+			ul.mainnav li a{ width:115px; margin:0 auto; height:45px; border-radius:5px; line-height:45px; font-size:18px; background-color:#ffedaf; color:#341B39;  text-align:center; position: relative; display:block; font-family:"微軟正黑體","標楷體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif; margin-bottom:20px; }
+			ul.mainnav li a:hover{ text-decoration:none; background-color: rgba(0, 0, 0, 0.2); border:1px solid #fff4d3;	color:#341B39;   }
+			ul.mainnav li.newsongs a{ background-color:#ffb6b4; color:#341B39; }
+			ul.mainnav li.newsongs a:hover{ background-color :rgba(0, 0, 0, 0.2); border:1px solid #d1807f; color:#341B39; }
+			ul.mainnav li a:hover span{ color:transparent; }
+	
+	#we5_Logo{
+		width:93px;
+		height:32px;
+		position:absolute;
+		left:146px;
+		top:15px;
+	}
+	#we5_Logo a {
+	width:93px;
+	height:32px;
+	display:block;
+	background: url(../images/logo.png);
+	text-indent:-9999px;
+	z-index: 999;
+	}
+
+	
+	
+	
+
+/*Nav按鈕動態 Effect 10: reveal, push out */
+.cl-effect-10  {
+	position: relative;
+	z-index: 1;
+}
+
+
+.cl-effect-10 a span {
+	display: block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-10 a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translateX(-20%);
+}
+
+.cl-effect-10 a:hover span{
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.cl-effect-10 a:hover::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+}
